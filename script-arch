@@ -1,0 +1,15 @@
+sudo pacman -S snapd
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+sudo snap install discord
+
+//pocotes
+sudo pacman -S base-devel
+sudo pacman -S glib2 libdbusmenu-glib gnome-keyring icu || yay -S icu69
+
+https://aur.archlinux.org/yay.git
+visual-studio-code-bin 
+sudo pacman -S  base-devel      
+yay -S visual-studio-code-bin 
+sudo snap install postman
+snap install ngrok
