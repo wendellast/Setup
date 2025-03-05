@@ -1,11 +1,8 @@
 {
   "workbench.iconTheme": "icons",
-  "workbench.colorTheme": "Bearded Theme Aquarelle Hydrangea",
+  "workbench.colorTheme": "Kanagawa",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.activityBar.location": "top",
-  "window.menuBarVisibility": "compact",
-  "window.titleBarStyle": "native",
-  
   "editor.minimap.enabled": true,
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
@@ -13,32 +10,23 @@
   "editor.renderWhitespace": "trailing",
   "editor.wordWrap": "on",
   "editor.formatOnSave": true,
-  "editor.formatOnSaveMode": "modifications",
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+
+  "editor.formatOnType": true,
   "editor.stickyScroll.enabled": false,
-  "editor.codeActionsOnSave.source.organizeImports": "always",
-  "editor.codeActionsOnSave.source.fixAll": "always",
-  
+
   "terminal.integrated.sendKeybindingsToShell": true,
-  
   "code-runner.runInTerminal": true,
-  
-  "cursor.aipreview.enabled": true,
-  "cursor.cpp.disabledLanguages": [],
-  "cursor.cpp.enablePartialAccepts": true,
-  
+
   "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.useLibraryCodeForTypes": true,
-  
   "go.toolsManagement.autoUpdate": true,
-  
+
   "emmet.includeLanguages": {
     "django-html": "html",
     "javascript": "javascriptreact",
     "typescript": "typescriptreact"
   },
-  
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.tabSize": 4,
@@ -50,7 +38,6 @@
       "source.organizeImports.ruff": "explicit"
     }
   },
-  
   "[html]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "vscode.html-language-features",
@@ -60,7 +47,6 @@
       "strings": true
     }
   },
-  
   "[django-html]": {
     "editor.formatOnSave": false,
     "editor.defaultFormatter": "vscode.html-language-features",
@@ -70,7 +56,22 @@
       "strings": true
     }
   },
-  
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
@@ -80,7 +81,6 @@
       "source.fixAll.eslint": "explicit"
     }
   },
-  
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
@@ -90,11 +90,8 @@
       "source.fixAll.eslint": "explicit"
     }
   },
-  
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
-  }
+
+  "window.customTitleBarVisibility": "auto",
+  "workbench.layoutControl.enabled": false,
+  "workbench.navigationControl.enabled": false
 }
